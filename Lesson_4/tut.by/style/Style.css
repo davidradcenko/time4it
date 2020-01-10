@@ -1,0 +1,140 @@
+/*Root*/
+:root{
+  font-family: Arial,sans-serif;
+  font-size: 13px;
+}
+body{
+  background-color: #e6e6e6;
+  margin: 0 auto;
+}
+/*Header*/
+.header{
+  max-width: 1080px;
+  margin: 0 auto;
+  background-color: #fff;
+ 
+}
+.header__auth::after{
+  content: "18+";
+  padding: 0 6px;
+  background-color: #f2f2f2;
+  line-height: 26px;
+  border-radius: 2px;
+  font-size: 15px;
+  margin-left: 38px;
+  position: absolute;
+  left: -40px;
+  top:7px;
+}
+@media (max-width:925px){
+  .header-top{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+/*Header Top*/
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.header-top__button_catalig{
+  background-color: inherit;
+  border: none;
+  height: 40px;
+   margin-right: 8px;
+  
+}
+@media (max-width:850px){
+  .navigation-box__link{
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width:850px){
+  .header__auth{
+    order: 3;
+  }
+    @media (max-width:850px){
+  .menu{
+    order: 4;
+  }
+.header-top__button_catalig::before{
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height:16px;
+  background-image: url(../images/icons/sprite.png);
+  background-position: -520px -559px;
+ 
+  margin-right: 6px;
+}
+.header__auth{
+   line-height: 40px;
+  align-items: center;
+  display: flex;
+  color: inherit;
+  text-decoration: none;
+  position: relative;
+  height: 40px;  
+}
+.header__auth::before{
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background-image: url(../images/icons/sprite.png);
+  background-position: -616px -559px;
+}
+/* Navigation Box*/
+.navigation-box{
+  display: none;
+}
+/*menu*/
+.menu{
+display: flex;
+  
+}
+.menu__link{
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  padding: 0 12px;  
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.menu__link-box{
+  display: flex;
+  padding: 0 12px;
+}
+.menu__link-box .menu__link{
+  padding: 0;
+}
+.menu__link::before{
+  content: "";
+  display: block;
+  margin-right: 6px;
+}
+.menu__link:hover{
+  color: #c60a00;
+}
+.menu__link_green{
+  color: #59c269;
+}
+.menu__link_icon_geo::before{
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/icons/sprite.png);
+  background-position: -654px -40px; 
+}
+.menu__link_icon_cloud::before{
+  background-image: url(../images/icons/claut.png);
+  width: 24px;
+  height: 24px;
+}
+
